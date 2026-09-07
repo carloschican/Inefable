@@ -6,17 +6,10 @@
 }
 
 body {
-    background-color: #000;
-    color: #fff;
-    margin: 0;
-    padding: 0;
+    background-color: #FEF7F5;
+    color: #333;
     width: 100%;
     overflow-x: hidden;
-}
-
-main {
-    padding: 1rem;
-    margin-top: 5rem;
 }
 
 /*Esta parte es del logo y de la barra lateral color verde*/
@@ -34,12 +27,12 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden; /* Corta cualquier elemento que intente salir */
+    /*overflow: hidden; /* Corta cualquier elemento que intente salir */
 }
 
 /*esta parte pertenece al logo*/
 .logo {
-    height: 100px;
+    height: 50px;
     width: auto;
     display: block;
 }
@@ -54,7 +47,7 @@ main {
 .nav-link { /*barra de todo el menu lateral*/
     color: #ffffff;
     text-decoration: none;
-    padding: 80px 16px;
+    padding: 8px 16px;
     border-radius: 5px;
     font-size: 15px;
     transition: background 0.3s ease;
@@ -75,10 +68,86 @@ main {
     background-color: #1ebd56;
 }
 
-.main-content {
-    margin-top: 70px; /* Ajusta este valor según el ancho de tu barra lateral */
-    padding: 30px;
+.banner-hero {
+    margin-top: 70px; /* Compensa la altura del header fijo */
+    width: 100%;
+    max-height: 450px; /* Limita la altura para no ocultar el contenido */
+    overflow: hidden;
 }
+
+.banner-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    display: block;
+}
+
+.main-content {
+    margin: 0 auto;  /* Ajusta este valor según el ancho de tu barra lateral */
+    padding: 40px 20px;
+    max-width: 12000px;
+    text-align: center;
+}
+
+.bienvenida {  /*texto de bienvenida*/
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #b5dcea58;
+    border-radius: 8px;
+    display: inline-block; 
+}
+
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.description-marca {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.seccion-titulo {
+    color: #1a1a1a;
+    margin-bottom: 25px;
+}
+
+.grid-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    width: 260px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.producto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.pecio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2ecc71;
+    display: block;
+}
+
 
 @media (max-width: 600px) {
     .header {
@@ -89,33 +158,8 @@ main {
         padding: 6px 8px;
         font-size: 12px;
     }
-}
 
-.producto {
-    width: 300px;
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: center;
-    border-radius: 8px;
-
-}
-
-.producto img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-
-}
-
-.description {
-    font-size: 14px;
-    color: #333;
-    margin: 10px 0 5px 0;
-}
-
-.precio {
-    font-size: 18px;
-    font-weight: bold;
-    color: #2ecc71;
-    display: block;
+    .baner-hero {
+        max-height: 250px;
+    }
 }
