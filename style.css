@@ -80,6 +80,17 @@ main {
     padding: 30px;
 }
 
+@media (max-width: 600px) {
+    .header {
+        padding: 0 10px;
+    }
+
+    .nav-link {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+}
+
 .producto {
     width: 300px;
     border: 1px solid #ddd;
