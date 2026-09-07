@@ -1,0 +1,110 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+/*Esta parte es del logo y de la barra lateral color verde*/
+.header { 
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100;
+    height: 70px;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden; /* Corta cualquier elemento que intente salir */
+}
+
+/*esta parte pertenece al logo*/
+.logo {
+    height: 100px;
+    width: auto;
+    display: block;
+}
+
+.nav-inicio { /*barra de todo el menu lateral*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-link { /*barra de todo el menu lateral*/
+    color: #ffffff;
+    text-decoration: none;
+    padding: 80px 16px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: background 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #333333;
+}
+
+.whatsapp-link {
+    background-color: #25D366;
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+.whatsapp-link:hover {
+    background-color: #1ebd56;
+}
+
+.main-content {
+    margin-top: 70px; /* Ajusta este valor según el ancho de tu barra lateral */
+    padding: 30px;
+}
+
+.producto {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+
+}
+
+.description {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0 5px 0;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2ecc71;
+    display: block;
+}
